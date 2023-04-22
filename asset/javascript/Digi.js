@@ -14,11 +14,13 @@ fetch(url)
             console.log(data[key].level)
 
 
+            // digimons = data[key]
+
             for (var i = 0; i <= 10; i++) {
                 $("#tabla-posts").append(`
              <tr>
                  <td>${data[key].name}</td>
-                 <td>${data[key].img}</td>
+                 <td>${data.img}</td>
                  <td>${data[key].level}</td>
              </tr>
             
