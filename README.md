@@ -1,6 +1,6 @@
 # Digimon
 
-# solo he logrado consumir una api
+# consumiendo una api
 
 ## Enlace directo al repositorio
 
