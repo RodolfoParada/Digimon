@@ -1,15 +1,17 @@
-*{
+*html{
     padding:0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
  
 .body{
   background-color:green;
 }
 .container{
-   display: grid;
-   justify-items:center;
+  display: grid;
+  justify-items:center;
   background-color: whitesmoke;
 
   
@@ -21,10 +23,15 @@
   display: inline-block;
   border:  4px solid black;
   background-color:black;
-  color:beige
+  color:beige;
+  margin-left: -60px;
 
 }
 
+
+.digimon-details{
+  margin-left: 100px;
+}
 
 
 

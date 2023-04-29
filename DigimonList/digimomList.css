@@ -1,0 +1,127 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el listado de Digimon */
+
+#digimon-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#digimon-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#digimon-list li a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para los detalles del Digimon */
+
+#digimon-details {
+    position: sticky;
+    top: 6rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#digimon-image {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+#digimon-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#digimon-level {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Media queries, cuando la pantalla es pequeña hacer main flex column */
+
+@media (max-width: 768px) {
+    .main-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #digimon-details {
+        position: relative;
+        top: 0;
+        margin-top: 20px;
+        width: auto;
+        font-size: 14px;
+
+    }
+
+    #digimon-image {
+        width: 100%;
+        height: 150px;
+    }
+}
