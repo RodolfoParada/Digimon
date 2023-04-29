@@ -1,0 +1,8 @@
+.card-header img{
+    float:left;
+    margin-right: 10px;
+}
+body{
+    background: rgb(244,243,133);
+background: radial-gradient(circle, rgba(244,243,133,1) 0%, rgba(7,26,255,1) 100%);
+}
